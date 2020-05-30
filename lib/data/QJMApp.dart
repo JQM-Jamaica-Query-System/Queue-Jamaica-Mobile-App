@@ -54,6 +54,16 @@ class QJMApp
     return activeQueues;
   }
 
+  List<Host> getHosts()
+  {
+    return hosts;
+  }
+
+  List<Client> getClients()
+  {
+    return clients;
+  }
+
   void terminateQueue(JQueue queue)
   {
     String code = queue.getQueueCode();
